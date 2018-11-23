@@ -1,4 +1,4 @@
-# BeRusty
+# Berusty
 
 me practicing [Rust by example]
 
