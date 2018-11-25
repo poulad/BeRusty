@@ -11,7 +11,7 @@ me practicing [Rust by example]
 1. [X] Hello World
 1. [X] Primitives
 1. [X] Custom Types
-1. [ ] Variable Bindings
+1. [X] Variable Bindings
 1. [ ] Types
 1. [ ] Conversion
 1. [ ] Expressions
