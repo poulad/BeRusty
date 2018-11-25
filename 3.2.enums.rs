@@ -1,5 +1,5 @@
 /*
-clear; rustc --crate-name enums 3.2.enums.rs && ./enums
+clear; rustc --crate-name enums --out-dir target 3.2.enums.rs && target/enums
 */
 
 enum WebEvent {
@@ -32,5 +32,5 @@ fn main() {
     handle_event(WebEvent::Click{ x: 100, y: 200 });
     handle_event(WebEvent::PageUnloaded);
 
-    println!("WebEvent::PageLoaded has an i32 value of {}.", PageLoaded as i32);
+    // println!("WebEvent::PageLoaded has an i32 value of {}.", PageLoaded as i32);
 }

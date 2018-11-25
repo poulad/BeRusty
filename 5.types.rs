@@ -1,5 +1,5 @@
 /*
-clear; rustc --crate-name types --out-dir bin 5.types.rs && bin/types
+clear; rustc --crate-name types --out-dir target 5.types.rs && target/types
 */
 
 type CharacterCode = u8;

@@ -1,5 +1,5 @@
 /*
-rustc --crate-name formatting 1.2.formatting.rs && ./formatting
+clear; rustc --crate-name formatting --out-dir target 1.2.formatting.rs && target/formatting
 */
 
 #[derive(Debug)]

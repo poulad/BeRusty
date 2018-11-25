@@ -13,7 +13,7 @@ me practicing [Rust by example]
 1. [X] Custom Types
 1. [X] Variable Bindings
 1. [X] Types
-1. [ ] Conversion
+1. [X] Conversions
 1. [ ] Expressions
 1. [ ] Flow Control
 1. [ ] Functions

@@ -1,5 +1,5 @@
 /*
-clear; rustc --crate-name formatting_display 1.2.2.display.rs && ./formatting_display
+clear; rustc --crate-name formatting_display --out-dir target 1.2.2.display.rs && target/formatting_display
 */
 
 use std::fmt;

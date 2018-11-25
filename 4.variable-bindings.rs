@@ -1,5 +1,5 @@
 /*
-clear; rustc --crate-name bindings 4.variable-bindings.rs && ./bindings
+clear; rustc --crate-name bindings --out-dir target 4.variable-bindings.rs && target/bindings
 */
 
 fn main() {

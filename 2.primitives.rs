@@ -1,5 +1,5 @@
 /*
-clear; rustc --crate-name primitives 2.primitives.rs && ./primitives
+clear; rustc --crate-name primitives --out-dir target 2.primitives.rs && target/primitives
 */
 
 fn switch(pair: (i32, bool)) -> (bool, i32) {
