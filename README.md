@@ -4,6 +4,10 @@ me practicing [Rust by example]
 
 [Rust by example]: https://doc.rust-lang.org/stable/rust-by-example
 
+<img width=200 src="http://rustacean.net/assets/rustacean-flat-gesture.png">
+
+## Topics
+
 1. [X] Hello World
 1. [X] Primitives
 1. [X] Custom Types
