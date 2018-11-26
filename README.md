@@ -14,7 +14,7 @@ me practicing [Rust by example]
 1. [X] Variable Bindings
 1. [X] Types
 1. [X] Conversions
-1. [ ] Expressions
+1. [X] Expressions
 1. [ ] Flow Control
 1. [ ] Functions
 1. [ ] Modules
