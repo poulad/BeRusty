@@ -2,6 +2,22 @@
 clear; rustc --crate-name flow_control --out-dir target 8.flow-control.rs && target/flow_control
 */
 
+fn main() {
+    println!("~~~~~~~~~~~~~");
+
+    labled_loops();
+    println!("~~~~~~~~~~~~~");
+
+    returning_loop();
+    println!("~~~~~~~~~~~~~");
+
+    while_fizzbuzz(30);
+    println!("~~~~~~~~~~~~~");
+
+    for_fizzbuzz(20);
+    println!("~~~~~~~~~~~~~");
+}
+
 fn labled_loops() {
     'outer: loop {
         println!("Beginning of the outer loop.");
@@ -15,6 +31,7 @@ fn labled_loops() {
 
                 println!("End of the innerer loop.");
             }
+
             println!("End of the inner loop.");
         }
         println!("End of the outer loop.");
@@ -35,7 +52,7 @@ fn returning_loop() {
 
 fn while_fizzbuzz(max: u32) {
     let mut n = 1;
-    while n < max {
+    while n < max + 1 {
         if n > 1 { print!(", ") }
 
         if n % 15 == 0 {
@@ -54,15 +71,19 @@ fn while_fizzbuzz(max: u32) {
     println!("")
 }
 
-fn main() {
-    println!("~~~~~~~~~~~~~");
-
-    labled_loops();
-    println!("~~~~~~~~~~~~~");
-
-    returning_loop();
-    println!("~~~~~~~~~~~~~");
-
-    while_fizzbuzz(30);
-    println!("~~~~~~~~~~~~~");
+fn for_fizzbuzz(n: u32) {
+    for i in 1..=n {
+        if i != 1 { print!(", ") }
+        if i % 15 == 0 {
+            print!("fuzzbuzz")
+        } else if i % 3 == 0 {
+            print!("fizz")
+        }
+        else if i % 5 == 0 {
+            print!("buzz")
+        } else {
+            print!("{}", i)
+        }
+    }
+    println!()
 }
