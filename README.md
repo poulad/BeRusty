@@ -15,7 +15,7 @@ me practicing [Rust by example]
 1. [X] Types
 1. [X] Conversions
 1. [X] Expressions
-1. [ ] Flow Control
+1. [X] Flow Control
 1. [ ] Functions
 1. [ ] Modules
 1. [ ] Crates
