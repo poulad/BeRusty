@@ -19,7 +19,7 @@ me practicing [Rust by example]
 1. [X] Functions
 1. [X] Modules
 1. [X] Crates
-1. [ ] Cargo
+1. [X] Cargo
 1. [ ] Attributes
 1. [ ] Generics
 1. [ ] Scoping Rules
