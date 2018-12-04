@@ -18,7 +18,7 @@ me practicing [Rust by example]
 1. [X] Flow Control
 1. [X] Functions
 1. [X] Modules
-1. [ ] Crates
+1. [X] Crates
 1. [ ] Cargo
 1. [ ] Attributes
 1. [ ] Generics
