@@ -1,5 +1,7 @@
 # Berusty
 
+[![Build Status](https://travis-ci.org/poulad/Berusty.svg?branch=master)](https://travis-ci.org/poulad/Berusty)
+
 me practicing [Rust by example]
 
 [Rust by example]: https://doc.rust-lang.org/stable/rust-by-example
