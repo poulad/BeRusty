@@ -1,4 +1,5 @@
 language: rust
+
 rust:
   - stable
   - beta
@@ -6,5 +7,14 @@ rust:
 matrix:
   allow_failures:
     - rust: nightly
+
 notifications:
     email: false
+
+env:
+    # CRATES_TOKEN=token
+    - secure: H4XbkJt8h9Vbsp6KohLBgVS7RE/1nGJcd8Z7gRfl04Fmgd2bfEh3bCiGKQOoCLgwNzy2sodMV23FHOTtUpQ2VxmnKj7KMLlfMz4L4QXm0m1Ctkw2yfFm3E62sYai4aOnAQasJBpPKnGeWxmM3lrz8ZwgiTDywPOJDE+kHUBgV1dlWXlrbgxTGsyfg8XTos9oLH/o/2G21QvYmGYTpsyI6lpQrc6mVEpNAW7MzjmwAYS/ICa06grLCOSjEjnuUxCSjwl+ZV38yUADjqZB/ZmVpX9hhFkjZbMm201masKoGCzbzBp0pjn9eynSzf+7SanBbwk2YfhwJ66aDrpBjptPbSAIUe2jEy5GX2p+dyAEyWO4+f6hvtc1k+hwGKFViNchvFCF3n35go5M02TRdCBU9cxNWceQ2JeMLPRaCOunLggbvw/JbVbhTwptO6M/Z6BR9euABNQcuXI/gNrky4bt2uXL5nryFi7wqLMvATlfXRu7OePNjlDFMXCugjHSDYBXRq+Pvb5hC6U6rroMXliXLnALt0+trH1qvK3Bz4aC3ZpdiZvfIkXraeX7zgE4N8zDp+8Xv9Xj8l9ngBvPRfy/BhczsbC1y5BFgE/fsOj7ZCdC1WOUJX2tMbLMt34K0uwr24VANzo6rjdaSCbmZaqfhO9p2RBCTkazI1Xvkl0abqg=
+
+deploy:
+  - provider: script
+    script: cargo publish --verbose --token "$CRATES_TOKEN" || echo "It's alright!"
